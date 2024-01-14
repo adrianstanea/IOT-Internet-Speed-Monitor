@@ -32,5 +32,9 @@ speed_data = [
 ]
 
 # https://influxdb-python.readthedocs.io/en/latest/api-documentation.html
-client = InfluxDBClient(host='localhost', port=8086, username='astanea', password='astanea', database='internet_speed')
+client = InfluxDBClient(host='localhost', 
+                        port=8086,
+                        username='astanea', 
+                        password='astanea',
+                        database='internet_speed')
 client.write_points(speed_data)
